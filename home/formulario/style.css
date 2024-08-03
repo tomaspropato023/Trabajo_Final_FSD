@@ -1,0 +1,93 @@
+#contenedor {
+    background-color: rgb(219, 208, 208);
+}
+
+#menu {
+    display: flex;
+    width: 97.2%;
+    height: 50px;
+    background-color: rgb(180, 49, 49);
+    justify-content:space-between;
+    border-radius: 4px;
+}
+#menu > ul {
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: steelblue;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+#menu > ul > a {
+    color:steelblue;
+}
+
+#elemento1 {
+    display: flex;
+    flex-direction: row;
+}
+#hidden {
+    display: none;
+}
+
+#menu #elemento1:hover > #hidden {
+    display: block;
+}
+#menu #nombreSuper {
+    font-size: xx-large;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(15, 212, 146);
+    margin-top: 0px;
+}
+
+#datos {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form > div > label {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+
+}
+form > div > input {
+    width: 250px;
+    text-align: center;
+    border-radius: 4px;
+}
+#consulta {
+    width: 1000px;
+    height: 200px;
+    text-align: start;
+}
+
+#enviar {
+    margin-top: 20px;    
+    width: 100px;
+    background-color: rgb(180, 49, 49);
+    border-radius: 5px;
+    color: white;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    width: 100.3%;
+    height: auto;
+    background-color: rgb(180, 49, 49);
+    color: rgb(15, 212, 146);
+    align-items: center;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+#footer > nav {
+    display: flex;
+    flex-direction: row;
+}

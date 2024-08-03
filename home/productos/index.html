@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="contenedor">
+    <div id="header">
+        <menu id="menu">
+            <ul id="nombre">Supermercado Tomás</ul>
+            <ul><a href="../index.html">Historia</a></ul>
+            <ul id="elemento1">Página Principal <span id="hidden">(Usted esta aqui)</span></ul>
+            <ul><a href="../formulario/index.html">Consultas</a></ul>
+        </menu>
+    </div>
+    <div id="seccionPrincipal">
+        <h1 align="center">Listado de Artículos</h1>
+        <div id="listaProductos">
+            <div class="item">
+                <img width="75%" height="70%">
+                <p></p>
+                <p id="precio"></p>
+                <input type="number" class="compra" min="0" max="999">
+                <p></p>
+            </div>
+            <div class="item">
+                <img width="75%" height="70%">
+                <p></p>
+                <p id="precio"></p>
+                <input type="number" class="compra" min="0" max="999">
+                <p></p>
+            </div>
+            <div class="item">
+                <img width="75%" height="70%">
+                <p></p>
+                <p id="precio"></p>
+                <input type="number" class="compra" min="0" max="999">
+                <p></p>
+            </div>
+            <div class="item">
+                <img width="75%" height="70%">
+                <p></p>
+                <p id="precio"></p>
+                <input type="number" class="compra" min="0" max="999">
+                <p></p>
+            </div>
+            <div class="item">
+                <img width="75%" height="70%">
+                <p> </p>
+                <p id="precio"></p>
+                <input type="number" class="compra" min="0" max="999">
+                <p></p>
+            </div>
+            <div class="item">
+                <img width="75%" height="70%">
+                <p> </p>
+                <p id="precio"></p>
+                <input type="number" class="compra" min="0" max="999">
+                <p></p>
+            </div>
+            <div class="item">
+                <img width="75%" height="70%">
+                <p> </p>
+                <p id="precio"></p>
+                <input type="number" class="compra" min="0" max="999">
+                <p></p>
+            </div>
+            <div class="item">
+                <img width="75%" height="70%">
+                <p></p>
+                <p id="precio"></p>
+                <input type="number" class="compra" min="0" max="999">
+                <p></p>
+            </div>
+            <div class="item">
+                <img width="75%" height="70%" >
+                <p></p>
+                <p id="precio"></p>
+                <input type="number" class="compra" min="0" max="999">
+                <p></p>
+            </div>
+            <div class="item">
+                <img width="75%" height="70%">
+                <p> </p>
+                <p id="precio"></p>
+                <input type="number" class="compra" min="0" max="999">
+                <p></p>
+            </div>
+            <div class="item">
+                <img width="75%" height="70%">
+                <p></p>
+                <p id="precio"></p>
+                <input type="number" class="compra" min="0" max="999">
+                <p></p>
+            </div>
+            <div class="item">
+                <img width="75%" height="70%">
+                <p></p>
+                <p id="precio"></p>
+                <input type="number" class="compra" min="0" max="999">
+                <p></p>
+            </div>
+        </div>
+        <div id="carrito">
+            <label for="metodoPago">Seleccione un metodo de pago:</label>
+            <select id="metodoPago" name="metodosDePago">
+                <option value="efectivo">Efectivo</option>
+                <option value="tarjetaCredito">Tarjeta de Crédito en cuotas</option>
+                <option value="tarjetaDebito">Tarjeda de Débito</option>
+            </select>
+            <button id="confirmarCompra">Confirmar Compra</button>
+            <p>El total es de $<span id="total"></span></p>
+            <p id="hidden"></p>
+        </div>
+    </div>
+    <div id="footer">
+        <nav>
+            <ul><a>Noticias</a></ul>
+            <ul><a>Terminos y condiciones</a></ul>
+            <ul><a>Promociones</a></ul>
+            <ul><a>Libro de quejas</a></ul>
+            <ul><a>Defensa al consumidor</a></ul>
+            <ul><a>Ayuda</a></ul>
+        </nav>
+        <p id="copyright">&copy 2024 Supermercado Tomas. Todos los derechos reservados.</p>
+        <p id="copyright">CP 7400, Olavarría, Buenos Aires.</p>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

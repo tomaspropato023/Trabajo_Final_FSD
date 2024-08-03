@@ -9,12 +9,16 @@ let informacion = [];
 
 btnEnviar.addEventListener('click', (e) => {
     e.preventDefault();
-    informacion[0] = nombre.value;
-    informacion[1] = apellido.value;
-    informacion[2] = email.value;
-    informacion[3] = telefono.value.toString();
-    informacion[4] = consulta.value;
-    let blob = new Blob ([informacion], {type: "text/plain;charset=utf-8"});
-        saveAs(blob, "Contacto.txt");
+    if (!nombre.value.trim() || !apellido.value.trim() || !email.value.trim() || !telefono.value.trim() || !consulta.value.trim()) {
+        alert("Tiene que rellenar todos los espacios.");
+    } else {
+        informacion[0] = `Nombre: ${nombre.value}`;
+        informacion[1] = ` Apellido: ${apellido.value}`;
+        informacion[2] = ` Correo: ${email.value}`;
+        informacion[3] = ` Telefono: ${telefono.value}`.toString();
+        informacion[4] = ` Mensaje: ${consulta.value}`;
+    }
+    let blob = new Blob ([informacion], { type: "text/plain;charset=utf-8" });
+        saveAs(blob, "Formulario.txt");
 });
 

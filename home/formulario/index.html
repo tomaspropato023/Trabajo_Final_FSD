@@ -6,25 +6,49 @@
     <title>Formulario de contacto</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <h2><b>Formulario de contacto</b></h2>
-    <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre">
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido">
-        <label for="email">Email:</label>
-        <input type="text" id="email">
-        <label for="telefono">Telefono</label>
-        <input type="text" id="telefono">
-        <div>
-            <label for="consulta">Ingrese su consulta</label>
-            <input type="text" id="consulta" height="200px">
-        </div>
-
-        <button id="enviar">Enviar</button>
-    </form>
-
+<body id="contenedor">
+    <div id="header">
+        <menu id="menu">
+            <ul id="nombreSuper">Supermercado Tomás</ul>
+            <ul><a href="../index.html">Historia</a></ul>
+            <ul><a href="../productos/index.html">Página Principal</a></ul>
+            <ul id="elemento1">Consultas<span id="hidden">(Usted esta aqui)</span></ul>
+        </menu>
+    </div>
+    <div id="seccionPrincipal">
+        <h1 align="center"><b>Formulario de contacto</b></h1>
+            <form>
+                <div id="datos">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Ej: Tomás" required>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" placeholder="Ej: Propato" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Ej: tomas.propato@outlook.com" required>
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" id="telefono" pattern="[0-9]{4}-[0-9]{6}" placeholder="Ej: 1234-567890" required>
+                </div>
+                <div>
+                    <label for="consulta">Ingrese su consulta:</label>
+                    <input type="text" id="consulta" required>
+                </div>
+                <div>
+                    <button id="enviar">Enviar</button>
+                </div>
+            </form>
+    </div>
+    <div id="footer">
+        <nav>
+            <ul><a>Noticias</a></ul>
+            <ul><a>Terminos y condiciones</a></ul>
+            <ul><a>Promociones</a></ul>
+            <ul><a>Libro de quejas</a></ul>
+            <ul><a>Defensa al consumidor</a></ul>
+            <ul><a>Ayuda</a></ul>
+        </nav>
+        <p id="copyright">&copy 2024 Supermercado Tomas. Todos los derechos reservados.</p>
+        <p id="copyright">CP 7400, Olavarría, Buenos Aires.</p>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./script.js"></script>
 </body>
