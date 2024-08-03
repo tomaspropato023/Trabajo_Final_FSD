@@ -12,7 +12,7 @@ function cargaDeArticulos() {
     for (let i=0; i < productos.length; i++) {
         productos[i].src = "articulos/" + arregloImagenes[j];
         productos[i+1].innerText = arregloProductos[j];
-        productos[i+2].innerText = `Valor: $${arregloPrecios[j]}`;
+        productos[i+2].innerText = `Precio unitario: $${arregloPrecios[j]}`;
         productos[i+3].innerText = `${arregloStock[j]} unidades en stock.`;
         i+=3;
         j++;

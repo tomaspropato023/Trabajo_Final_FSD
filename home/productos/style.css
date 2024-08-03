@@ -61,10 +61,10 @@
     object-fit: fill;
     flex-direction: column;
     align-items: center;
+    font-weight: 600;
 }
 .item > p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-right: 5px;
 }
 .item > input {
     width: auto;
@@ -81,12 +81,17 @@
     display: flex;
     flex-direction: column;
     border: 10px solid salmon;
+    border-radius: 15px;
+    background-color: cornflowerblue;
     width: 250px;
     height: 200px;
     margin-left: 485px;
     align-items: center;
     justify-content: space-evenly;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    font-weight: 700;
+    margin-top: 20px;
 }
 
 #footer {
@@ -98,6 +103,7 @@
     color: rgb(15, 212, 146);
     align-items: center;
     border-radius: 2px;
+    margin-top: 20px;
 }
 
 #footer > nav {
