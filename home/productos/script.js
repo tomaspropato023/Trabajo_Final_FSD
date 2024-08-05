@@ -25,13 +25,18 @@ function validacionDelStock() {
     let i = 0;
     inputs.forEach(input => {
         let cantidad = parseInt(Number(input.value));
-        if (arregloStock[i] > cantidad) {
-            productosAComprar += Number(input.value);
-            valido = true;
-        } else {
-            alert("Error. Ingrese una cantidad válida.");
-            valido = false;
+        if (cantidad >= 0) {
+            if (cantidad <= arregloStock[i] ) {
+                productosAComprar += Number(input.value);
+                valido = true;
+            } else {
+                alert("Ingrese una cantidad válida.");
+                valido = false;
             }
+        } else {
+            alert("Ingrese una cantidad válida.")
+            valido = false;
+        }
         i++;
     })
     return valido;
@@ -60,10 +65,15 @@ document.querySelector('#confirmarCompra').addEventListener("click",() => {
         let index = 0;
         inputs.forEach(input => {
             let cantidad = parseInt(Number(input.value));
-            compraProductos(cantidad, index);
+            if (cantidad >= 0 && cantidad <= arregloStock[index]) {
+                compraProductos(cantidad, index);
+            }
             index++;
         })
-        mostrarCompra();
+        if (subtotal > 0) {
+            mostrarCompra();
+        }
+
     } else {
         alert("Hubo un error en la compra.");
     }
